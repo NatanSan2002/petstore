@@ -1,0 +1,147 @@
+/* Banner */
+
+.carrosel {
+    position: relative;
+}
+
+.carrosel>img {
+    width: 100%;
+}
+
+.carrosel .arrows {
+    width: 100%;
+    max-width: 972px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    transition: 0.3s;
+    padding: 0 0px;
+}
+
+.carrosel .arrows>img:hover {
+    filter: brightness(0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/*Sub Sections*/
+
+section .sub {
+    background: var(--color2);
+    margin-top: -4px;
+}
+
+section .sub>.Centralizer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section .sub img {
+    width: 32.3%;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+/* Principal*/
+
+
+
+#principal>h6 {
+    margin-bottom: 40px;
+
+}
+
+#principal .for_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.for_container>img {
+    width: 50%;
+    max-width: 572px;
+}
+
+
+
+
+
+@media(max-width:1024px) {
+    .carrosel .arrows {
+        justify-content: center;
+    }
+
+    .carrosel .arrows>img {
+        margin: 0 28%;
+        width: 32px;
+    }
+
+    /*principal*/
+
+    #principal .for_container {
+        justify-content: center;
+    }
+
+    .for_container>img {
+        width: 100%;
+        max-width: 572px;
+    }
+
+    .for_container .firts {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    /*Banner */
+    .carrosel {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .carrosel>img {
+        max-width: 513px;
+        margin: 0 auto;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .carrosel .arrows {
+        top: 84%;
+
+    }
+
+    .carrosel .arrows>img {
+        margin: 0 28%;
+        width: 25px;
+    }
+
+    /*Sub Sections */
+
+    section .sub {
+        margin: 0;
+    }
+
+    section .sub>.Centralizer {
+        justify-content: center;
+    }
+
+    section .sub img {
+        width: 100%;
+        max-width: 380px;
+        margin: 20px 0px;
+    }
+}

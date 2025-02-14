@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+/*font Montserrat: 'Montserrat', sans-serif; */
+
+@import url(./menu_ini.css);
+@import url(./mid.css);
+@import url(./produtos.css);
+@import url(./footer.css);
+
+:root {
+    --maincolor: white;
+    --color1: #8158c5;
+    --color2: #ffa200;
+    --color3: #7f7f7f;
+    --mainfont: 'Montserrat', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+
+    background: var(--maincolor);
+    font-family: var(--mainfont);
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h6,
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+article {
+    padding: 39px 0;
+    padding-bottom: 98px;
+
+}
+
+article>h6,
+article>h1 {
+    margin-bottom: 30px;
+    color: var(--color3);
+}
+
+#icons_fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 9;
+}
+
+#icons_fixed>img {
+    cursor: pointer;
+}
+
+#icons_fixed>.firts {
+    margin-bottom: 8px;
+}
+
+
+
+.Centralizer {
+    max-width: 1160px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.itens_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itens_container>* {
+    width: 23%;
+
+}
+
+@media(max-width:1024px) {
+    .itens_container>* {
+        width: 40%;
+    }
+
+    #icons_fixed>img {
+        width: 45px
+    }
+
+    #icons_fixed .firts {
+        width: 39px;
+    }
+
+
+}
+
+
+@media(max-width:520px) {
+    .itens_container>* {
+        width: 100%;
+        max-width: 270px;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    #icons_fixed {
+        bottom: 10%;
+    }
+
+}

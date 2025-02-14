@@ -1,0 +1,339 @@
+footer>.head {
+    background: var(--color1);
+    color: white;
+    padding: 0;
+}
+
+footer .Centralizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .vantagens {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+footer .vantagens .center {
+    margin: 0 8%;
+}
+
+footer .vantagens img {
+    margin-right: 12px;
+}
+
+footer .vantagens>div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--color2);
+}
+
+
+
+
+
+footer .assine {
+    margin: 50px 0;
+    width: 100%;
+    max-width: 607px;
+    text-align: center;
+}
+
+
+
+footer .assine p {
+    font-size: 0.875rem;
+    font-weight: 200;
+    margin: 15px 0 45px 0;
+}
+
+footer .send {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .send input {
+    background: none;
+    border-style: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    outline: 0;
+    font-family: var(--mainfont);
+    font-weight: 300;
+
+}
+
+footer .send input::placeholder {
+    color: white;
+    font-family: var(--mainfont);
+    font-weight: 300;
+
+}
+
+footer .send .email {
+    width: 315px;
+}
+
+footer .send button {
+    font-family: var(--mainfont);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    background: var(--color2);
+    padding: 13px 21px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/* down part*/
+
+footer>.down {
+    background: var(--maincolor);
+    color: var(--color3);
+    ;
+}
+
+footer .infos h6 {
+    color: var(--color1);
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+footer .infos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 42px;
+    margin-bottom: 21px;
+}
+
+footer .infos>* {
+    margin: 0 10px;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .socials>div {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    margin-bottom: 20px;
+}
+
+footer .socials>div img {
+    background: var(--color3);
+    border-radius: 50%;
+    margin: 0 15px;
+    padding: 7px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .socials>div img:hover {
+    background: var(--color2);
+    transition: 0.3s;
+}
+
+footer .socials .vertical {
+    padding: 7px 11px;
+}
+
+footer .socials .hori {
+    padding: 9px 7px;
+}
+
+footer .socials p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+footer .contato {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 447px;
+    justify-content: space-between;
+}
+
+
+footer .contato>div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .contato a {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color3);
+}
+
+footer .contato>div>* {
+    margin-bottom: 12px;
+}
+
+
+footer .payments {
+    max-width: 209px;
+
+}
+
+footer .payments h6 {
+    margin-bottom: 15px;
+    padding-left: 4px;
+}
+
+footer .payments div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .payments img {
+    margin: 0 4px;
+    margin-bottom: 8px;
+
+}
+
+
+
+footer .rights {
+    display: flex;
+    width: 100%;
+    margin-top: 59px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .rights p {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    margin-right: 21px;
+}
+
+
+
+
+
+
+
+@media(max-width:1024px) {
+    footer .vantagens .center {
+        margin: 0;
+    }
+
+    footer .vantagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .vantagens>div {
+        min-width: 289px;
+
+    }
+
+    /*down*/
+
+    footer .infos {
+
+        justify-content: center;
+
+    }
+
+
+
+
+}
+
+@media(max-width:768px) {
+    footer .send {
+        justify-content: center;
+
+    }
+
+    footer .send input,
+    footer .send .email {
+        width: 100%;
+        max-width: 384px;
+        margin-bottom: 20px;
+    }
+
+
+
+    footer .send button {
+        width: 100%;
+        max-width: 225px;
+    }
+
+    /*down*/
+
+
+
+    footer .payments {
+        max-width: 250px;
+    }
+
+    footer .payments>div {
+        justify-content: center;
+    }
+
+
+    footer .contato {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 39px;
+        margin-bottom: 39px;
+    }
+
+    footer .contato a {
+        text-align: center;
+    }
+
+    footer .infos h6 {
+        text-align: center;
+    }
+
+    footer .contato>div {
+        min-width: 162px;
+    }
+
+
+}
+
+@media(max-width:520px) {
+    footer .vantagens>div {
+        min-width: 250px;
+
+    }
+}

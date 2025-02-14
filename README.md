@@ -1,2 +1,1 @@
-# petstore
-Site de processo Seletivo
+Olá, para quem for analisar esse site gostaria de ressaltar que já fazia um bom tempo (mais de 6 meses) que não usava HTML, CSS, e JS "puros" até essa ocasião, estava muito acostumado com o framework REACT, assim muitas vezes sentia falta de usar componentes e outros famosos métodos do mesmo, portanto já peço perdão por qualquer decisão "estranha" que eu possa ter tomado nesse projeto, obrigado e boa análise.
